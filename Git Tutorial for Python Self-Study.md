@@ -330,6 +330,8 @@ python3 -m venv .venv
 source .venv/bin/activate
 ```
 
+注意source不要拼错成sourse。
+
 成功后，终端前面通常会出现：
 
 ```bash
