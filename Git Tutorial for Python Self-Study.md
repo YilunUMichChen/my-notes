@@ -395,8 +395,16 @@ def test_is_even():
 运行测试：
 
 ```bash
+python -m pytest
+```
+
+注意，如果只用
+
+```bash
 pytest
 ```
+
+会报错，因为pytest来自 Anaconda base（检查方法， 在终端里打which pytest， 输出/opt/anaconda3/bin/pytest， 这不正确，正确的应当输出），不是当前 .venv；而python -m pytest，调用的是当前 .venv 的 Python，这样才正确。
 
 如果看到类似：
 
